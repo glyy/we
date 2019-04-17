@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>嘿嘿嘿</title>
+<title>day</title>
 <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
 <style>
 /*
@@ -202,7 +202,7 @@ function checkTime(i) {
 	 */
 function showTime() {
     var curtime = new Date(); //当前时间
-    var endtime = new Date("2017/05/28,00:00:00"); //目标时间
+    var endtime = new Date("2019/06/05,00:00:00"); //目标时间
     var leftTime = (endtime.getTime() - curtime.getTime()) / 1000; //毫秒(ms)
     var leftDay = parseInt(leftTime / (24 * 60 * 60)); //剩余天数
     var leftHour = parseInt(leftTime / (60 * 60) % 24); //剩余小时
@@ -213,7 +213,7 @@ function showTime() {
     $('min').innerHTML = checkTime(leftMin);
     $('sec').innerHTML = checkTime(leftSec);
     if (leftTime <= 0) {
-        $('title').innerHTML = "再见2016，2017你好";
+        $('title').innerHTML = "再见2018，2019你好";
         $('day').innerHTML = 0;
         $('hour').innerHTML = 0;
         $('min').innerHTML = 0;
